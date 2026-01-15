@@ -19,3 +19,9 @@ m.fit(X_tr,y_tr)
 y_P=m.predict(X_t)
 print(y_P)
 print("\nScore of Model: ",m.score(X_t,y_t))
+print("\nlength of X train : ",len(X_tr))
+print("\n length of X test : ",len(X_t))
+print("\nlength of Y train : ",len(y_tr))
+print("\n length of Y test : ",len(y_t))
+
+
