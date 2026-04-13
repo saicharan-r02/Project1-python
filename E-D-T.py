@@ -15,8 +15,10 @@ d['Fare'].fillna(d['Fare'].median(),inplace=True)
 d['Sex']=d['Sex'].map({"male":0,"female":1})
 n=d[["Pclass","Sex","Age","Fare"]]
 e=d["Survived"]
+
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
+
 X_tr,X_t,y_tr,y_t=train_test_split(n,e,train_size=0.2)
 m=DecisionTreeClassifier()
 m.fit(X_tr,y_tr)
