@@ -6,8 +6,10 @@ warnings.filterwarnings("ignore")
 d=pd.read_csv("Survival.csv")
 
 print(d.head())
+
 d=d[["Pclass","Sex","Age","Fare","Survived"]]
 print(d)
+
 d['Age'].fillna(d['Age'].median(),inplace=True)
 d['Fare'].fillna(d['Fare'].median(),inplace=True)
 d['Sex']=d['Sex'].map({"male":0,"female":1})
