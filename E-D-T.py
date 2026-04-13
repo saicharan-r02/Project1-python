@@ -1,8 +1,10 @@
 import pandas as pd
 import numpy as np
 import warnings
+
 warnings.filterwarnings("ignore")
 d=pd.read_csv("Survival.csv")
+
 print(d.head())
 d=d[["Pclass","Sex","Age","Fare","Survived"]]
 print(d)
