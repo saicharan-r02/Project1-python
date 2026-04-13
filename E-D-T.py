@@ -23,7 +23,9 @@ X_tr,X_t,y_tr,y_t=train_test_split(n,e,train_size=0.2)
 m=DecisionTreeClassifier()
 m.fit(X_tr,y_tr)
 y_P=m.predict(X_t)
+
 print(y_P)
+
 print("\nScore of Model: ",m.score(X_t,y_t))
 print("\nlength of X train : ",len(X_tr))
 print("\n length of X test : ",len(X_t))
