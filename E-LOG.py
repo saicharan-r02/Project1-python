@@ -1,9 +1,12 @@
 import matplotlib.pyplot as plt 
 import pandas as pd
+
 d=pd.read_csv("HR.csv")
 print(d.head())
+
 l=d[d.left==1]
 print(l)
+
 r=d[d.left==0]
 print(r)
 print(l.shape)
