@@ -32,6 +32,9 @@ print(md.score(X,y))
 print(md.feature_names_in_)
 
 print(md.predict(pd.DataFrame([[20000,9,0,1]],columns=['Mileage','Age(yrs)','Audi A5','BMW X5'])))
+
 print(md.predict(pd.DataFrame([[49300,4,1,0]],columns=['Mileage','Age(yrs)','Audi A5','BMW X5'])))
+
 print(md.predict(pd.DataFrame([[29438,9,0,0]],columns=['Mileage','Age(yrs)','Audi A5','BMW X5'])))
+
 print(md.predict(pd.DataFrame([[38652,23,1,0]],columns=['Mileage','Age(yrs)','Audi A5','BMW X5'])))
