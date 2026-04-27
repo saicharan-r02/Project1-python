@@ -18,10 +18,14 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression 
 
 X_tr,X_t,y_tr,y_t=train_test_split(d.data,d.target,train_size=0.3)
+
 m=LogisticRegression()
 m.fit(X_tr,y_tr)
 print(m.score(X_t,y_t))
+
 y_P=m.predict(X_t)
+
+
 from sklearn.metrics import accuracy_score
 c=accuracy_score(y_t,y_P)
 print(c)
