@@ -1,7 +1,9 @@
 from sklearn.datasets import load_iris
 import matplotlib.pyplot as plt
+
 d=load_iris()
 print(dir(d))
+
 print("DESCR: \n",d.DESCR) 
 print("DATA: \n",d.data) 
 print("DATA_MODULE: \n",d.data_module) 
