@@ -36,6 +36,7 @@ p= m.predict(s)
 
 for i, pred in enumerate(p):
     print(f"Sample {i+1} Prediction:", d.target_names[pred])
+    
 plt.scatter(X_t[:,0], X_t[:,1], c=y_P)
 plt.xlabel("Sepal Length")
 plt.ylabel("Sepal Width")
