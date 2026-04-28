@@ -27,10 +27,13 @@ y_P=m.predict(X_t)
 
 
 from sklearn.metrics import accuracy_score
+
 c=accuracy_score(y_t,y_P)
 print(c)
+
 s = X_t[:5]
 p= m.predict(s)
+
 for i, pred in enumerate(p):
     print(f"Sample {i+1} Prediction:", d.target_names[pred])
 plt.scatter(X_t[:,0], X_t[:,1], c=y_P)
