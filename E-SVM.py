@@ -6,8 +6,10 @@ l=load_digits()
 plt.gray() 
 
 for i in range(6,12):
-    plt.matshow(l.images[i],cmap='inferno')    
+    plt.matshow(l.images[i],cmap='inferno') 
+
 plt.show()    
+
 print(dir(l))
 print(l.feature_names)
 print(l.target_names)
