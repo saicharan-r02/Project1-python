@@ -15,8 +15,10 @@ print(l.feature_names)
 print(l.target_names)
 print(l.target)
 print(l.data)
+
 d=pd.DataFrame(l.data,l.target)
 print(d)
+
 d["target"]=l.target
 print(d)
 x=d.drop(d[["target"]],axis="columns")
