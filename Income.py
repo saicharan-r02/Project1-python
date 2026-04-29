@@ -33,6 +33,7 @@ print(per)
 
 y_d["per_capita_incomes"]=per
 print(y_d)
+
 y_d.to_csv("predictions.csv")
 plt.xlabel("year")
 plt.ylabel("per_capita_incomes")
