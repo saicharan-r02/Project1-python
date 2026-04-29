@@ -34,7 +34,9 @@ print(len(X_t))
 from sklearn.svm import SVC
 m=SVC()
 m.fit(X_tr,y_tr)
+
 print(m.score(X_t,y_t))
+
 m_c=SVC(C=10)
 m_c.fit(X_tr,y_tr)
 print("Regularization Accuracy score: \n",m_c.score(X_t,y_t))
