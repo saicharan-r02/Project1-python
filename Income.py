@@ -10,6 +10,7 @@ plt.xlabel("year")
 plt.ylabel("per_capita_income")
 plt.scatter(d.year,d.per_capita_income,color="darkblue",marker="*")
 plt.show()
+
 n_d=d.drop("per_capita_income",axis="columns")
 print(n_d)
 p=d.per_capita_income
