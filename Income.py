@@ -19,10 +19,12 @@ print(p)
 
 reg=linear_model.LinearRegression()
 reg.fit(n_d,p)
+
 print(reg.coef_)
 print(reg.intercept_)
 print(reg.predict(pd.DataFrame({"year": [1960]})))
 print(reg.predict(pd.DataFrame({"year": [2027]})))
+
 y_d=pd.read_csv("Canada's-per.csv")
 print(y_d)
 per=reg.predict(y_d)
