@@ -2,8 +2,10 @@ import pandas as pd
 import numpy as np
 from sklearn import linear_model
 import matplotlib.pyplot as plt
+
 d=pd.read_csv("Canada.csv")
 print(d)
+
 plt.xlabel("year")
 plt.ylabel("per_capita_income")
 plt.scatter(d.year,d.per_capita_income,color="darkblue",marker="*")
