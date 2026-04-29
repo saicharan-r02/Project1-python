@@ -13,8 +13,10 @@ plt.show()
 
 n_d=d.drop("per_capita_income",axis="columns")
 print(n_d)
+
 p=d.per_capita_income
 print(p)
+
 reg=linear_model.LinearRegression()
 reg.fit(n_d,p)
 print(reg.coef_)
