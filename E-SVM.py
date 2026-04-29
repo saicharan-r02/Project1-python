@@ -27,8 +27,10 @@ y=d.target
 
 from sklearn.model_selection import train_test_split
 X_tr,X_t,y_tr,y_t=train_test_split(x,y,train_size=0.8)
+
 print(len(X_tr))
 print(len(X_t))
+
 from sklearn.svm import SVC
 m=SVC()
 m.fit(X_tr,y_tr)
