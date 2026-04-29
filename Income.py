@@ -27,8 +27,10 @@ print(reg.predict(pd.DataFrame({"year": [2027]})))
 
 y_d=pd.read_csv("Canada's-per.csv")
 print(y_d)
+
 per=reg.predict(y_d)
 print(per)
+
 y_d["per_capita_incomes"]=per
 print(y_d)
 y_d.to_csv("predictions.csv")
