@@ -32,6 +32,7 @@ def predict_fun(age):
 
 age=30
 print("Age: 30",predict_fun(age))
+
 age=50
 print("Age: 50",predict_fun(age))
 age=0
