@@ -15,7 +15,9 @@ from sklearn.linear_model import LogisticRegression
 m=LogisticRegression()
 m.fit(X_tr,y_tr)
 print(X_t)
+
 y_P=m.predict(X_t)
+
 print(m.predict_proba(X_t))
 print(m.score(X_t,y_t))
 print(y_P)
