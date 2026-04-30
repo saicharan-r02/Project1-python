@@ -24,10 +24,12 @@ print(y_P)
 print(X_t)
 print(m.intercept_)
 print(m.coef_)
+
 import math
 def predict_fun(age):
     z = m.coef_[0][0] * age + m.intercept_[0]
     return 1 / (1 + math.exp(-z))
+
 age=30
 print("Age: 30",predict_fun(age))
 age=50
