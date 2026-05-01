@@ -12,8 +12,10 @@ plt.show()
 
 X=d[["Mileage","Age(yrs)"]]
 y=d["Sell Price($)"]
+
 from sklearn.model_selection import train_test_split
 X_tr,X_t,y_tr,y_t=train_test_split(X,y,test_size=0.3)
+
 print(X_tr)
 print(X_t)
 print(y_tr)
