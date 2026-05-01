@@ -6,8 +6,10 @@ print(d)
 
 plt.scatter(d["Mileage"],d["Sell Price($)"])
 plt.show()
+
 plt.scatter(d["Age(yrs)"],d["Sell Price($)"])
 plt.show()
+
 X=d[["Mileage","Age(yrs)"]]
 y=d["Sell Price($)"]
 from sklearn.model_selection import train_test_split
