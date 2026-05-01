@@ -28,6 +28,7 @@ c.fit(X_tr,y_tr)
 print(X_tr)
 
 print(c.predict(X_t))
+
 print(y_t)
 print(c.score(X_t,y_t))
 X_tr,X_t,y_tr,y_t=train_test_split(X,y,test_size=0.3,random_state=10)
