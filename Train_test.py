@@ -1,7 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+
 d=pd.read_csv("TT.csv")
 print(d)
+
 plt.scatter(d["Mileage"],d["Sell Price($)"])
 plt.show()
 plt.scatter(d["Age(yrs)"],d["Sell Price($)"])
