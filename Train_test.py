@@ -24,6 +24,7 @@ print(y_t)
 from sklearn.linear_model import LinearRegression
 c=LinearRegression()
 c.fit(X_tr,y_tr)
+
 print(X_tr)
 print(c.predict(X_t))
 print(y_t)
