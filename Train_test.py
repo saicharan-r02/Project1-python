@@ -20,6 +20,7 @@ print(X_tr)
 print(X_t)
 print(y_tr)
 print(y_t)
+
 from sklearn.linear_model import LinearRegression
 c=LinearRegression()
 c.fit(X_tr,y_tr)
