@@ -48,9 +48,11 @@ print("Statistical Max:\n",np.max(a))
 print("Statistical Min:\n",np.min(a))
 print("Statistical Mean:\n",np.mean(a))
 print("Statistical Std:\n",np.std(a))
+
 a=np.array([[1,3,6,8],[42,6,8,2]])
 print("Column-wise sum: \n",np.sum(a,axis=0))
 print("Row-wise  Sum:\n",np.sum(a,axis=1))
+
 a=np.array([[1,3,6,8],[42,6,8,2]])
 b=np.array([10,40,60,80])
 print("Broadcasting addition: \n",a+b)
