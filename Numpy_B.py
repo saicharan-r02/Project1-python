@@ -6,8 +6,10 @@ s=100000
 l1=range(s)
 l2=range(s)
 st=time.time()
+
 r=[(x+y) for x,y in zip(l1,l2)]
 print("python list : ",(time.time()-st)*1000)
+
 a1=np.arange(s)
 a2=np.arange(s)
 st=time.time()
