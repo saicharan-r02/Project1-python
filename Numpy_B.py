@@ -15,8 +15,10 @@ a2=np.arange(s)
 st=time.time()
 r=a1+a2
 print("Numpy is :",(time.time()-st)*1000)
+
 import numpy as np
 a=np.array([[[1,2,3],[7,4,8]],[[13,4,68],[4,5,7]]])
+
 print("Array :\n",a)
 print("Dimensions: \n",a.ndim)
 print("Shape:\n",a.shape)
