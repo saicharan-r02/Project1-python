@@ -62,6 +62,7 @@ print("Broadcasting module: \n",a%b)
 print("Broadcasting division: \n",a/b)
 print("Broadcasting Scalar operations: \n",a*2)
 print("Broadcasting Scalar operations: \n",b*3)
+
 a=np.array([2,9,4,5])
 b=a.copy()
 b[2]=304
@@ -69,7 +70,9 @@ print(a)
 print("Copy view array: \n",b)
 print("Random numbers array:",np.random.rand(3,3))
 print("Random numbers array:",np.random.randint(1,10,(3,3)))
+
 a=np.array([8,492,4813,4,775,1,9])
 print("Sorting :\n",np.sort(a))
+
 a=np.array([23,494,39,3,28,53,40])
 print("Boolean making :\n",a[a>35])
