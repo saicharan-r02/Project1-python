@@ -33,6 +33,7 @@ print("Even spacing:\n",np.linspace(1,20,6))
 
 a=np.array([1,2,3,4])
 b=np.array([5,6,7,8])
+
 print("Element wise operations multiplication :\n",a*b)
 print("Element wise operations addition :\n",a+b)
 print("Element wise operations subtraction :\n",a-b)
@@ -42,6 +43,7 @@ print("Scalar operations:\n",a*2)
 print("Scalar operations:\n",b*3)
 
 a=np.array([24,67,23,82,79,24,90])
+
 print("Array: ",a)
 print("Statistical Sum:\n",np.sum(a))
 print("Statistical Max:\n",np.max(a))
