@@ -12,7 +12,9 @@ print(d)
 
 reg=linear_model.LinearRegression()
 reg.fit(d.drop("price",axis="columns"),d.price)
+
 print(reg.coef_)
 print(reg.intercept_)
+
 print(reg.predict(pd.DataFrame({"area":[2000],"bedrooms":[6],"age":[30]})))
 print(reg.predict(pd.DataFrame({"area":[4200],"bedrooms":[4],"age":[50]})))
