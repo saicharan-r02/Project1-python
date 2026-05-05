@@ -4,10 +4,13 @@ from sklearn import linear_model
 import matplotlib.pyplot as plt
 from word2number import w2n
 import math
+
 d=pd.read_csv("Hiring-M.csv")
 print(d)
+
 d.experience=d.experience.fillna("zero")
 print(d)
+
 d.experience=d.experience.apply(w2n.word_to_num)
 print(d)
 m=math.floor(d["test_score(out of 10)"].mean())
