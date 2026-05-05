@@ -22,8 +22,10 @@ print(d)
 
 reg=linear_model.LinearRegression()
 reg.fit(d.drop("salary($)",axis="columns"),d["salary($)"])
+
 print(reg.coef_)
 print(reg.intercept_)
+
 print(reg.predict(pd.DataFrame({"experience":[2],"test_score(out of 10)":[9],"interview_score(out of 10)":[6]})))
 print(reg.predict(pd.DataFrame({"experience":[12],"test_score(out of 10)":[10],"interview_score(out of 10)":[10]})))
 print(reg.predict(pd.DataFrame({"experience":[0],"test_score(out of 10)":[1],"interview_score(out of 10)":[2]})))
