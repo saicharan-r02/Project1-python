@@ -13,10 +13,13 @@ print(d)
 
 d.experience=d.experience.apply(w2n.word_to_num)
 print(d)
+
 m=math.floor(d["test_score(out of 10)"].mean())
 print(m)
+
 d["test_score(out of 10)"]=d["test_score(out of 10)"].fillna(m)
 print(d)
+
 reg=linear_model.LinearRegression()
 reg.fit(d.drop("salary($)",axis="columns"),d["salary($)"])
 print(reg.coef_)
