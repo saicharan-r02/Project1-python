@@ -21,6 +21,7 @@ model = RandomForestClassifier(n_estimators=200, max_depth=8, random_state=42)
 model.fit(X_train, y_train)
 
 y_pred = model.predict(X_test)
+
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print("\nConfusion Matrix:  ", confusion_matrix(y_test, y_pred,labels=[0, 1]))
 print("\nClassification Report:\n", classification_report(y_test, y_pred))
@@ -211,6 +212,7 @@ plt.title("Range Distribution by Brand-Figure-30")
 plt.show()
 
 brand_battery = df.groupby("Brand")["Battery_kWh"].mean().reset_index()
+
 sns.heatmap(brand_battery.set_index("Brand").T, annot=True, cmap="YlGnBu")
 plt.title("Average Battery by Brand Heatmap-Figure-31")
 plt.show()
