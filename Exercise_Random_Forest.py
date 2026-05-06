@@ -122,6 +122,7 @@ plt.show()
 
 
 from pandas.plotting import scatter_matrix
+
 scatter_matrix(df[["Battery_kWh","Range_miles","Top_Speed_mph","Acceleration_0_60"]], figsize=(10,10))
 plt.suptitle("Scatter Matrix of EV Features-Figure-16")
 plt.show()
@@ -134,7 +135,9 @@ sns.pairplot(df, vars=["Battery_kWh","Range_miles","Top_Speed_mph","Acceleration
 plt.suptitle("Pairwise Relationships of EV Performance Features (Hue: Fast Charger Compatible)-Figure-18",y=1.02)
 plt.show()
 
+
 from mpl_toolkits.mplot3d import Axes3D
+
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.scatter(df["Battery_kWh"], df["Range_miles"], df["Top_Speed_mph"], c=df["Fast_Charger_Compatible"])
