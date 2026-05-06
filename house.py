@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 
 d=pd.read_csv("Weather.csv")
 print(d)
-
 plt.xlabel("area")
 plt.ylabel("price")
 plt.scatter(d.area,d.price,color="darkblue",marker="*")
@@ -19,7 +18,6 @@ print(p)
 
 reg=linear_model.LinearRegression()
 reg.fit(n_d,p)
-
 print(reg.predict([[3300]]))
 print(reg.coef_)
 print(reg.intercept_)
@@ -33,7 +31,9 @@ print(pr)
 
 a_d["prices"]=pr
 print(a_d)
+
 a_d.to_csv("prediction.csv")
+
 plt.xlabel("area")
 plt.ylabel("price")
 plt.scatter(a_d.area,a_d.prices,color="darkblue",marker="*")
