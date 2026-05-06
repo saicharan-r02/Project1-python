@@ -109,7 +109,9 @@ plt.suptitle("")
 plt.ylabel("Range (miles)")
 plt.show()
 
+
 import seaborn as sns
+
 sns.violinplot(x="Fast_Charger_Compatible", y="Acceleration_0_60", data=df)
 plt.title("Acceleration Distribution by Fast Charger-Figure-14")
 plt.show()
@@ -117,6 +119,7 @@ plt.show()
 sns.swarmplot(x="Brand", y="Top_Speed_mph", data=df)
 plt.title("Top Speed Distribution per Brand-Figure-15")
 plt.show()
+
 
 from pandas.plotting import scatter_matrix
 scatter_matrix(df[["Battery_kWh","Range_miles","Top_Speed_mph","Acceleration_0_60"]], figsize=(10,10))
