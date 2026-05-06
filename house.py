@@ -24,10 +24,13 @@ print(reg.predict([[3300]]))
 print(reg.coef_)
 print(reg.intercept_)
 print(reg.predict([[5000]]))
+
 a_d=pd.read_csv("area.csv")
 print(a_d)
+
 pr=reg.predict(a_d)
 print(pr)
+
 a_d["prices"]=pr
 print(a_d)
 a_d.to_csv("prediction.csv")
