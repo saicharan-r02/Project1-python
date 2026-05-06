@@ -139,7 +139,9 @@ plt.show()
 from mpl_toolkits.mplot3d import Axes3D
 
 fig = plt.figure()
+
 ax = fig.add_subplot(111, projection='3d')
+
 ax.scatter(df["Battery_kWh"], df["Range_miles"], df["Top_Speed_mph"], c=df["Fast_Charger_Compatible"])
 ax.set_xlabel("Battery")
 ax.set_ylabel("Range")
@@ -152,6 +154,7 @@ plt.xlabel("Range (miles)")
 plt.ylabel("Top Speed (mph)")
 plt.title("Range vs Top Speed (Size=Acceleration)-Figure-20")
 plt.show()
+
 
 import numpy as np
 labels=np.array(["Battery","Range","Top Speed","Acceleration"])
