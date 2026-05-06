@@ -157,13 +157,16 @@ plt.show()
 
 
 import numpy as np
+
 labels=np.array(["Battery","Range","Top Speed","Acceleration"])
 stats=df.loc[0,["Battery_kWh","Range_miles","Top_Speed_mph","Acceleration_0_60"]].values
+
 angles=np.linspace(0, 2*np.pi, len(labels), endpoint=False)
 stats=np.concatenate((stats,[stats[0]]))
 angles=np.concatenate((angles,[angles[0]]))
 fig=plt.figure(figsize=(6,6))
 ax=fig.add_subplot(111, polar=True)
+
 ax.plot(angles, stats, 'o-', linewidth=2)
 ax.fill(angles, stats, alpha=0.25)
 ax.set_thetagrids(angles[:-1]*180/np.pi, labels)
