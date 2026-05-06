@@ -13,10 +13,13 @@ plt.show()
 
 n_d=d.drop("price",axis="columns")
 print(n_d)
+
 p=d.price
 print(p)
+
 reg=linear_model.LinearRegression()
 reg.fit(n_d,p)
+
 print(reg.predict([[3300]]))
 print(reg.coef_)
 print(reg.intercept_)
