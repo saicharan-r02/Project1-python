@@ -23,10 +23,13 @@ X_tr,X_t,y_tr,y_t=train_test_split(d.data,d.target,train_size=0.3)
 m=LogisticRegression()
 m.fit(X_tr,y_tr)
 print(m.score(X_t,y_t))
+
 y_P=m.predict(X_t)
+
 from sklearn.metrics import confusion_matrix
 c=confusion_matrix(y_t,y_P)
 print(c)
+
 import seaborn as sn
 plt.figure(figsize = (10,7))
 sn.heatmap(c, annot=True)
