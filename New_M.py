@@ -26,8 +26,10 @@ print(reg.predict([[5000]]))
 import  pickle
 with open("model_F","wb") as file:
     pickle.dump(reg,file)
+    
 with open("model_F","rb") as file:
     m=pickle.load(file)
+    
 print(m.predict(pd.DataFrame({"area": [5500]})))    
 import joblib
 joblib.dump(reg,"model_J")
