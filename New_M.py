@@ -16,11 +16,13 @@ print(n_d)
 
 p=d.price
 print(p)
+
 reg=linear_model.LinearRegression()
 reg.fit(n_d,p)
 print(reg.coef_)
 print(reg.intercept_)
 print(reg.predict([[5000]]))
+
 import  pickle
 with open("model_F","wb") as file:
     pickle.dump(reg,file)
