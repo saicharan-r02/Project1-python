@@ -2,8 +2,10 @@ import pandas as pd
 import numpy as np
 from sklearn import linear_model
 import matplotlib.pyplot as plt
+
 d=pd.read_csv("New_H.csv")
 print(d)
+
 plt.xlabel("area")
 plt.ylabel("price")
 plt.scatter(d.area,d.price,color="darkblue",marker="*")
