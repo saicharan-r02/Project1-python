@@ -29,9 +29,11 @@ with open("model_F","wb") as file:
     
 with open("model_F","rb") as file:
     m=pickle.load(file)
-    
+
 print(m.predict(pd.DataFrame({"area": [5500]})))    
+
 import joblib
+
 joblib.dump(reg,"model_J")
 j=joblib.load("model_J")
 print(j.predict(pd.DataFrame({"area":[6000]})))
