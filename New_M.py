@@ -10,8 +10,10 @@ plt.xlabel("area")
 plt.ylabel("price")
 plt.scatter(d.area,d.price,color="darkblue",marker="*")
 plt.show()
+
 n_d=d.drop("price",axis="columns")
 print(n_d)
+
 p=d.price
 print(p)
 reg=linear_model.LinearRegression()
