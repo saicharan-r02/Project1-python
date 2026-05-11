@@ -10,10 +10,13 @@ print(l.target_names)
 
 d=pd.DataFrame(l.data,columns=l.feature_names)
 print(d.head())
+
 d["target_n"]=l.target
 print(d)
+
 d["flowers_n"]=d.target_n.apply(lambda x: l.target_names[x])
 print(d)
+
 d0=d[d.target_n==0]
 d1=d[d.target_n==1]
 d2=d[d.target_n==2]
