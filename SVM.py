@@ -39,15 +39,19 @@ y=d.target_n
 X_tr,X_t,y_tr,y_t=train_test_split(x,y,test_size=0.2)
 
 from sklearn.svm import SVC
+
 m=SVC()
 m.fit(X_tr,y_tr)
 print("Accuracy score: \n",m.score(X_t,y_t))
+
 m_c=SVC(C=8)
 m_c.fit(X_tr,y_tr)
 print("Regularization Accuracy score: \n",m_c.score(X_t,y_t))
+
 m_g=SVC(gamma=90)
 m_g.fit(X_tr,y_tr)
 print("Gamma Accuracy score: \n",m_g.score(X_t,y_t))
+
 m_k=SVC(kernel="rbf")
 m_k.fit(X_tr,y_tr)
 print("Kernel Accuracy score: \n",m_k.score(X_t,y_t))
