@@ -1,4 +1,5 @@
 import pandas as pd
+
 d=pd.read_csv("Price_H.csv")
 print(d)
 dum=pd.get_dummies(d.town)
