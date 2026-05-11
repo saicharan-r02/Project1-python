@@ -20,9 +20,11 @@ print(d)
 d0=d[d.target_n==0]
 d1=d[d.target_n==1]
 d2=d[d.target_n==2]
+
 print(d0)
 print(d1)
 print(d2)
+
 plt.scatter(d0["sepal length (cm)"],d0["sepal width (cm)"],color="b",marker="+")
 plt.scatter(d1["petal length (cm)"],d1["petal width (cm)"],color="r",marker=".")
 plt.show()
