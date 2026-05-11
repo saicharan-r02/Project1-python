@@ -28,13 +28,16 @@ print(d2)
 plt.scatter(d0["sepal length (cm)"],d0["sepal width (cm)"],color="b",marker="+")
 plt.scatter(d1["petal length (cm)"],d1["petal width (cm)"],color="r",marker=".")
 plt.show()
+
 plt.scatter(d2["petal length (cm)"],d2["petal width (cm)"],color="g",marker=".")
 plt.scatter(d1["sepal length (cm)"],d1["sepal width (cm)"],color="orange",marker="+")
 plt.show()
+
 from sklearn.model_selection import train_test_split
 x=d.drop(d[["target_n","flowers_n"]],axis="columns")
 y=d.target_n
 X_tr,X_t,y_tr,y_t=train_test_split(x,y,test_size=0.2)
+
 from sklearn.svm import SVC
 m=SVC()
 m.fit(X_tr,y_tr)
