@@ -1,11 +1,13 @@
 import pandas as pd
 import matplotlib.pyplot as plt 
 from sklearn.datasets import load_iris
+
 l=load_iris()
 print(l)
 print(l.feature_names)
 print(l.data)
 print(l.target_names)
+
 d=pd.DataFrame(l.data,columns=l.feature_names)
 print(d.head())
 d["target_n"]=l.target
