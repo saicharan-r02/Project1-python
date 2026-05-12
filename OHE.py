@@ -11,10 +11,13 @@ print(m)
 
 f=m.drop(["town"],axis="columns")
 print(f)
+
 f=f.drop(["west windsor"],axis="columns")
 print(f)
+
 x=f.drop(["price"],axis="columns")
 print(x)
+
 y=f.price
 print(y)
 from sklearn import linear_model
