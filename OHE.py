@@ -20,12 +20,15 @@ print(x)
 
 y=f.price
 print(y)
+
 from sklearn import linear_model
 mod=linear_model.LinearRegression()
 mod.fit(x,y)
+
 print(mod.predict(x))
 print(mod.score(x,y))
 print(mod.predict([[3800,2,1]]))
+
 from sklearn.preprocessing import LabelEncoder
 l=LabelEncoder()
 df=d
