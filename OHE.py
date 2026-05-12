@@ -46,8 +46,10 @@ from sklearn.compose import ColumnTransformer
 c=ColumnTransformer([("town",OneHotEncoder(),[0])],remainder="passthrough")
 x=c.fit_transform(X)
 print("New modified x value \n",x)
+
 x=x[:,1:]
 print("New modified version x value \n",x)
+
 mod.fit(x,y)
 print("Prediction 1: ",mod.predict([[0,1,4000]]))
 print("Prediction 2: ",mod.predict([[1,0,3000]]))
