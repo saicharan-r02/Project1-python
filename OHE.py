@@ -2,10 +2,13 @@ import pandas as pd
 
 d=pd.read_csv("Price_H.csv")
 print(d)
+
 dum=pd.get_dummies(d.town)
 print(dum)
+
 m=pd.concat([d,dum],axis="columns")
 print(m)
+
 f=m.drop(["town"],axis="columns")
 print(f)
 f=f.drop(["west windsor"],axis="columns")
