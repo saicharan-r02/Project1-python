@@ -34,10 +34,13 @@ l=LabelEncoder()
 df=d
 df.town=l.fit_transform(df.town)
 print(df)
+
 X=df[["town","area"]].values
 print("New X value \n",X)
+
 y=df.price.values
 print("New Y value \n",y)
+
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 c=ColumnTransformer([("town",OneHotEncoder(),[0])],remainder="passthrough")
